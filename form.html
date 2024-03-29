@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body style="background-image:url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/620bd6d655f2044afa28bff4_glassmorphism.jpeg')">
+      <div class="form-box mt-5 mb-5">
+        <h2 class="text-center">TASK FORM</h2>
+       
+        <!--- Task Form -->
+        <form name="taskForm" action="">
+            <!--- User Name  -->
+            <div>
+                <div><label class="box-text" for="userName">NAME </label></div>
+                <input type="text" name="userName" class="textbox" placeholder="Enter your Name">
+            </div>
+            <div class="error" id="nameEr"></div>
+
+            <!--- Email ID -->
+            <div clas="d-flex justify-content">
+                <div><label for="email">EMAIL </label></div>
+                <input type="text" name="email" class="textbox" placeholder="Enter your Email">
+            </div>
+            <div class="error" id="emailEr"></div>
+
+            <!--- Mobile Number -->            
+            <div>
+                <div><label for="email">MOBILE NUMBER </label></div>
+                <input type="text" name="mobileNumber" class="textbox" placeholder="Enter your Mobile Number">
+            </div>
+            <div class="error" id="numEr"></div>
+
+            <!--- Password -->
+            <div>
+                <div><label for="password">PASSWORD </label></div>
+                <input type="text" name="password" class="textbox" placeholder="Enter your Password">
+            </div>
+            <div class="error" id="passEr"></div>
+
+            <!--- Confirm Password -->
+            <div>
+                <div><label for="confirmPassword">CONFIRM PASSWORD </label></div>
+                <input type="text" name="cPassword" class="textbox" placeholder="Enter your Name">
+            </div>
+            <div class="error" id="cPassEr"></div>
+
+            <!--- Gender -->
+            <div>
+                <div><label for="gender">GENDER </label></div>
+                <input type="radio" name="gender" value="male">
+                <label>Male</label>
+                <input type="radio" name="gender" value="female">
+                <label>Female</label>
+            </div>
+            <div class="error" id="genderEr"></div>
+
+            <!--- Skills -->
+            <div>
+                <div><label for="skill">SKILLS </label></div>
+                <input type="checkbox" name="skill" value="html">
+                <label>HTML</label>
+                <input type="checkbox" name="skill" value="css">
+                <label>CSS</label>
+                <input type="checkbox" name="skill" value="js">
+                <label>JS</label>
+            </div>
+            <div class="error" id="skillEr"></div>
+
+            <!--- Domain -->
+            <div>
+                <div><label for="domain">DOMAIN </label></div>
+                <select class="dropdown" name="domain">
+                    <option value="" selected disabled>Select any one option</option>
+                    <option value="frontend">Front End</option>
+                    <option value="backend">Back End</option>
+                    <option value="fullstack">Full Stack</option>
+                </select>
+            </div>
+            <div class="error" id="domainEr"></div>
+            <div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-warning" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js">s
+    </script>
+</body>
+
+</html>
